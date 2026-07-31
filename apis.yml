@@ -1,7 +1,30 @@
 aid: oula
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/oula.png
 name: Oula
-description: Oula is a company surfaced as a portfolio company of 8vc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Oula is a modern maternity and women's healthcare provider offering
+  collaborative pregnancy, gynecology, preconception, and miscarriage care
+  across New York and Connecticut, with expansion into North Carolina. Its model
+  pairs board-certified OBGYNs with expert midwives and care navigators to
+  deliver compassionate, evidence-based, patient-centered care, and it accepts
+  30+ insurance plans. Oula reports over 3,000 babies delivered, c-section rates
+  roughly 25% below the national average, and an 85% VBAC success rate. Surfaced
+  as a portfolio company of 8vc, Oula is a direct-to-consumer clinical care
+  business with no public developer or API program; enrichment probing found no
+  published OpenAPI, docs portal, or /.well-known discovery surface. An internal
+  api.oulahealth.com host exists behind an AWS load balancer but publishes no
+  public specification or documentation.
 url: https://raw.githubusercontent.com/api-evangelist/oula/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Healthcare
+- Maternity
+- Women's Health
+- Pregnancy
+- Gynecology
+- Telehealth
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,10 @@ maintainers:
 common:
 - type: Website
   url: https://oulahealth.com
+- type: DomainSecurity
+  url: security/oula-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
