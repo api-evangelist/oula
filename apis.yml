@@ -61,6 +61,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Blog
+  url: https://oulahealth.com/blog/
+- type: Support
+  url: https://oulahealth.com/faq/
+- type: PrivacyPolicy
+  url: https://oulahealth.com/privacy/
+- type: TermsOfService
+  url: https://oulahealth.com/terms-of-use/
 - type: Website
   url: https://oulahealth.com
 - type: DomainSecurity
